@@ -4,10 +4,14 @@ public class Turista {
     private String cpf;
     //Construtor Padrão
     Turista(){}
-    // Construtor personalizado
+    // sobrecarga Construtor personalizado
     Turista(String _nome){
         this.nome = _nome;
     }
+    //Mais uma sobrecarga do construtor
+    Turista(String _nome, { this.nome = _cpf; )}
+    this.nome = _nome;
+    this.cpf = _cpf;
     // Métodos
     public String viajar(){
         return "Viajou!!!";
